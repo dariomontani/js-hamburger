@@ -7,7 +7,7 @@ const hamburger = document.querySelector('.hamburger-menu');
 
 // diamo un display block all'hamburger-menu quando avviene l'evento "click"
 openHamburger.addEventListener('click', function(){
-    hamburger.style.display = 'block';
+    hamburger.classList.add('active');
 })
 
 // selezioniamo l'icona close
@@ -15,5 +15,5 @@ const closeHamburger = document.querySelector('.close');
 
 // diamo un display none all'hamburger-menu quando avviene l'evento "click"
 closeHamburger.addEventListener('click', function(){
-    hamburger.style.display = 'none';
+    hamburger.classList.remove('active');
 })
